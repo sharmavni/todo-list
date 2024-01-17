@@ -1,0 +1,36 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.2)),url(https://image.slidesdocs.com/responsive-images/background/fluid-creative-texture-business-green-simple-powerpoint-background_a219721365__960_540.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: -20%;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+
+.todo__value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quickstand', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.todo:has(.todo__checkbox) {
+    color: #eeeeee;
+    text-decoration: none;
+    order: 1;
+}
